@@ -1,0 +1,4 @@
+h1. Espec. Java UTFPR Apucarana
+
+Nesse repositório estarão todos os projetos que forem desenvolvidos
+no decorrer da especialização.
