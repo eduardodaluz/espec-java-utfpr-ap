@@ -14,3 +14,4 @@ identificar detalhes do sistema.
 Utilize todos os conceitos estudados nas duas disciplinas para construir o “melhor
 projeto” possível, tentando extrair o máximo de funcionalidades possível contido no
 website.
+	* O projeto está no diretório: uml_lp1;
