@@ -19,7 +19,7 @@ public class ExemploRMIClient {
 			//Procura pelo registro Exemplo para retornar a instancia do stub remoto (ref. obj. rem.)
 			//A definição da classe stub é baixada dinamicamente no cliente se o java > 1.5
 			while(true) {
-				String resposta = stub.mostraTexto("Esse programa executou uma operação ilegal e será fechado!"); //invoca o método remoto
+				String resposta = stub.mostraTexto("Olá mundo."); //invoca o método remoto
 				System.out.println("Resposta remota: " + resposta);
 			}
 		} catch (Exception e) {
