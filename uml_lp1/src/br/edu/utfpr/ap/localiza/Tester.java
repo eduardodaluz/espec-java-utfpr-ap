@@ -10,8 +10,21 @@ public class Tester {
 		initializeLocaliza(ctrReserva, ctrlGaragem);
 		
 		Cliente reservasEduardo = new Cliente("eduardo", "123", "456", null, null);
+		System.out.println("Reservas por Clientes:");
 		for(Reserva reserva : ctrReserva.consultaReservasPorCliente(reservasEduardo)) {
 			System.out.println(reserva.toString());
+		}
+		System.out.println("Consuta cliente por nome:");
+		for(Cliente cliente : ctrReserva.consultaClientesPorNome("amilcar")) {
+			System.out.println(cliente.toString());
+		}
+		System.out.println("Consulta veículo por placa:");
+		for(Veiculo veiculo : ctrlGaragem.consultaVeiculoPorPlaca("ASD-1234")) {
+			System.out.println(veiculo.toString());
+		}
+		System.out.println("Consulta veículo por Grupo:");
+		for(Veiculo veiculo : ctrlGaragem.consultaVeiculoPorGrupo(new Grupo("RELIQUIA", null))) {
+			System.out.println(veiculo.toString());
 		}
 	}
 	
@@ -31,7 +44,7 @@ public class Tester {
 		
 		Veiculo gol = ctrGaragem.addVeiculo("GOL", 1995, "ASD-1234", Combustivel.Etanol, "A", economico);
 		Veiculo vectra = ctrGaragem.addVeiculo("VECTRA", 2001, "ADQ-1977", Combustivel.Flex, "A", luxo);
-		Veiculo fusca = ctrGaragem.addVeiculo("FUSCA", 1969, "FHR-4395", Combustivel.Gasolina, "I", reliquia);
+		ctrGaragem.addVeiculo("FUSCA", 1969, "FHR-4395", Combustivel.Gasolina, "I", reliquia);
 		
 		ctrReserva.addReserva(new Date(), new Date(), false, apucarana, apucarana, eduardo, gol);
 		ctrReserva.addReserva(new Date(), new Date(), true, apucarana, londrina, amilcar, vectra);		

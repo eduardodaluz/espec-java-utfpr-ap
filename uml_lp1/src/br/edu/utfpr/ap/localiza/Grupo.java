@@ -1,12 +1,13 @@
 package br.edu.utfpr.ap.localiza;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Grupo {
 
     private String descricao;
     private String simbologia;
-    private ArrayList<Tarifa> tarifas;
+    private List<Tarifa> tarifas;
 
     public Grupo(String descricao, String simbologia) {
         this.descricao = descricao;
@@ -26,7 +27,7 @@ public class Grupo {
 	public void setSimbologia(String simbologia) {
 		this.simbologia = simbologia;
 	}
-	public ArrayList<Tarifa> getTarifas() {
+	public List<Tarifa> getTarifas() {
 		return tarifas;
 	}
 	public void addTarifa(Tarifa tarifa) {
@@ -34,6 +35,21 @@ public class Grupo {
 	}
 	public void delTarifa(Tarifa tarifa) {
 		tarifas.remove(tarifa);
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		if (obj != null) {
+			if (obj instanceof Grupo) {
+				Grupo gp = (Grupo) obj;
+				if (getDescricao().equals(gp.getDescricao())) {
+					return true;
+				}
+			} else {
+				return false;
+			}
+		}
+		return false;
 	}
 
 	@Override

@@ -1,7 +1,7 @@
 h1. Espec. Java UTFPR Apucarana
 
-Nesse repositório estarão todos os projetos que forem desenvolvidos
-no decorrer da especialização.
+Nesse repositório estarão todos os projetos/exercícios que forem desenvolvidos no decorrer da especialização.
+E tem como objetivo ajudar outros alunos como fonte de pesquisa. Se sinta a vontade para me sugerir alterações no código.
 
 h1. Tecnologia de Orientação à Objetos e Ferramentas UML e Linguagem de Programação I.
 

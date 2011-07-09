@@ -8,6 +8,11 @@ public class ControlGaragem {
 	private List<Veiculo> veiculos;
 	private List<Grupo> grupos;
 	
+	public ControlGaragem() {
+		veiculos = new LinkedList<Veiculo>();
+		grupos = new LinkedList<Grupo>();
+	}
+	
 	public Grupo addGrupo(String descricao, String simbologia) {
 		Grupo grupo = new Grupo(descricao, simbologia);
 		grupos.add(grupo);
