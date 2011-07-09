@@ -16,3 +16,9 @@ projeto” possível, tentando extrair o máximo de funcionalidades possível co
 website.
 
 * O projeto está no diretório: uml_lp1;
+
+h1. Sistemas Distribuídos Aplicados à Tecnologia Java.
+
+* O projeto está no diretório: sisdistr;
+Projetos inclusos:
+* Chat usando multicast;
