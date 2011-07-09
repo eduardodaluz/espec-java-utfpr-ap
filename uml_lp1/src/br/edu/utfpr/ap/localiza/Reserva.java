@@ -10,14 +10,35 @@ public class Reserva {
 	private Agencia agenciaRetirada;
 	private Agencia agenciaDevolucao;
 	private Cliente cliente;
+	private Veiculo veiculo;
 	
-	public Reserva(Date dataRetirada, boolean gps, Agencia agenciaRetirada, Cliente cliente) {
-		this.dataRetirada = dataRetirada;
-		this.gps = gps;
+	public Agencia getAgenciaRetirada() {
+		return agenciaRetirada;
+	}
+
+	public void setAgenciaRetirada(Agencia agenciaRetirada) {
 		this.agenciaRetirada = agenciaRetirada;
-		this.cliente = cliente;
+	}
+
+	public Veiculo getVeiculo() {
+		return veiculo;
+	}
+
+	public void setVeiculo(Veiculo veiculo) {
+		this.veiculo = veiculo;
 	}
 	
+	public Reserva(Date dataRetirada, Date dataDevolucao, boolean gps, Agencia agenciaRetirada,
+			Agencia agenciaDevolucao, Cliente cliente, Veiculo veiculo) {
+		this.dataRetirada = dataRetirada;
+		this.dataDevolucao = dataDevolucao;
+		this.gps = gps;
+		this.agenciaRetirada = agenciaRetirada;
+		this.agenciaDevolucao = agenciaDevolucao;
+		this.cliente = cliente;
+		this.veiculo = veiculo;
+	}
+
 	public Date getDataRetirada() {
 		return dataRetirada;
 	}
@@ -35,12 +56,6 @@ public class Reserva {
 	}
 	public void setGps(boolean gps) {
 		this.gps = gps;
-	}
-	public Agencia getAngenciaRetirada() {
-		return agenciaRetirada;
-	}
-	public void setAgenciaRetirada(Agencia agenciaRetirada) {
-		this.agenciaRetirada = agenciaRetirada;
 	}
 	public Agencia getAgenciaDevolucao() {
 		return agenciaDevolucao;

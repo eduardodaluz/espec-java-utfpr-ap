@@ -9,7 +9,6 @@ public class Cliente {
 	private String telefone;
 	
 	public Cliente(String nome, String cpf, String passaporte, String email, String telefone) {
-		super();
 		this.nome = nome;
 		this.cpf = cpf;
 		this.passaporte = passaporte;
@@ -57,6 +56,9 @@ public class Cliente {
 
 	@Override
 	public boolean equals(Object obj) {
+		if(obj == null) {
+			return false;
+		}
 		if (obj instanceof Cliente) {
 			Cliente cliEquals = (Cliente) obj;
 			if (!cliEquals.getNome().equals(getNome())) {
