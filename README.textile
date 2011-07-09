@@ -5,20 +5,21 @@ no decorrer da especialização.
 
 h1. Tecnologia de Orientação à Objetos e Ferramentas UML e Linguagem de Programação I.
 
-Esta atividade será utilizada para a avaliação das disciplinas Tecnologia de Orientação
-à Objetos e Ferramentas UML e Linguagem de Programação I.
-Nesta atividade vocês devem projetar e implementar (sem a utilização de banco de
-dados) o sistema online de reserva de veículos da empresa Localiza. O sistema pode
-ser acessado pelo endereço www.localiza.com.br. Explore e simule situações para
-identificar detalhes do sistema.
-Utilize todos os conceitos estudados nas duas disciplinas para construir o “melhor
-projeto” possível, tentando extrair o máximo de funcionalidades possível contido no
-website.
+Esta atividade será utilizada para a avaliação das disciplinas Tecnologia de Orientação à Objetos e Ferramentas UML e Linguagem de Programação I.
+Nesta atividade vocês devem projetar e implementar (sem a utilização de banco de dados) o sistema online de reserva de veículos da empresa Localiza.
+O sistema pode ser acessado pelo endereço www.localiza.com.br. Explore e simule situações para identificar detalhes do sistema.
+Utilize todos os conceitos estudados nas duas disciplinas para construir o “melhor projeto” possível, tentando extrair o máximo de funcionalidades possível contido no website.
 
 * O projeto está no diretório: uml_lp1;
 
 h1. Sistemas Distribuídos Aplicados à Tecnologia Java.
 
-* O projeto está no diretório: sisdistr;
-Projetos inclusos:
+Ementa: Caracterização de arquitetura distribuída. Modelos de sistemas distribuídos, tipos e motivação para aplicações distribuídas.
+Tecnologias de sistemas distribuídos (RMI) e implementação de aplicações distribuídas.
+
+Projetos desenvolvidos:
 * Chat usando multicast;
+* Servidor UDP de calculadora;
+* Servidor UDP de inversão de expressão;
+
+* O projeto está no diretório: sisdistr;
