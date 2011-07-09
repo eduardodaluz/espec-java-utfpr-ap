@@ -1,9 +1,9 @@
-h1.Sistemas Distribuídos Aplicados à Tecnologia Java.
+h1. Sistemas Distribuídos Aplicados à Tecnologia Java.
 * Estão todos os exercícios nesse projeto;
 * Projeto foi feito na IDE Eclipse;
 * Pode ser que ocorra erros no "pacoteJAVA" o ExemploInterface.class pois importei ela pelo eclipse.
 
-h2.Exercícios
+h2. Exercícios
 
 * Calculadora UDP e INVERTE+UPPERCASE Texto:
 os dois estão no mesma classe a qual inicia e vc escolhe se quer iniciar o servidor ou o cliente.
