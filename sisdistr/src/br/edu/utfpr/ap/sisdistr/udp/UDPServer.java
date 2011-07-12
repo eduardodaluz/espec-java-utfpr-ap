@@ -82,33 +82,6 @@ public class UDPServer extends Thread {
 		}
 	}
 	
-//	public static void main(String[] args) {
-//		DatagramSocket aSocket = null;
-//		try {
-//			aSocket = new DatagramSocket(6789); // cria um DatagramSocket na porta 6789
-//			byte[] buffer = new byte[1000]; // cria um buffer para receber mensagem até 1000 de tamanho (máx = 64K)
-//			while (true) {
-//				DatagramPacket request = new DatagramPacket(buffer,	buffer.length); // cria DatagramPacket
-//				aSocket.receive(request); // Espera o DatagramPacket ser preenchido....
-//				
-//				String volta = new String(request.getData(), 0, request.getLength()) + "(volta)";
-//				// Cria uma String a partir da mensagem sendo do tamanho exato dela e adiciona “(volta)”
-//				byte[] m = volta.getBytes(); // Converte volta para bytes
-//				DatagramPacket reply = new DatagramPacket(m, m.length, request.getAddress(), request.getPort());
-//				//Cria o DatagramPacket contendo a mensagem de volta
-//				System.out.println(new String(reply.getData())); //mostra a mensagem a ser enviada
-//				aSocket.send(reply); //envia a mensagem para o cliente
-//			}
-//		} catch (SocketException e) {
-//			System.out.println("Socket: " + e.getMessage());
-//		} catch (IOException e) {
-//			System.out.println("IO: " + e.getMessage());
-//		} finally {
-//			if (aSocket != null)
-//				aSocket.close();
-//		}
-//	}
-	
 	@Override
 	public void run() {
 		System.out.println("Iniciando o servidor!");

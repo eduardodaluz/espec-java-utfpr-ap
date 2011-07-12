@@ -1,11 +1,22 @@
 h1. Sistemas Distribuídos Aplicados à Tecnologia Java.
 * Estão todos os exercícios nesse projeto;
 * Projeto foi feito na IDE Eclipse;
-* Pode ser que ocorra erros no "pacoteJAVA" o ExemploInterface.class pois importei ela pelo eclipse.
+* Pode ser que ocorra erros no "pacoteJAVA" o ExemploInterface.class pois importei ela pelo eclipse;
 
 h2. Exercícios
+Segue a descrição e localização de cada um dos exercícios.
 
-* Calculadora UDP e INVERTE+UPPERCASE Texto:
-os dois estão no mesma classe a qual inicia e vc escolhe se quer iniciar o servidor ou o cliente.
-se servidor ele pede, servidor calculadora ou servidor texto.
-se cliente manda o parametro independente de qual tipo de servidor seja.
+h3. UDP Calculadora e INVERTE+UPPERCASE Texto:
+* Os dois estão no mesma classe a qual inicia e vc escolhe se quer iniciar o servidor ou o cliente;
+* Se servidor ele pede, servidor calculadora ou servidor texto;
+* Se cliente manda o parametro independente de qual tipo de servidor seja;
+* Pacote br.edu.utfpr.ap.udp;
+
+h3. Chat usando multicast
+* Envia mensagem para todos na rede que se conectam ao multicast;
+* Interface usando swing;
+* Pacote br.edu.utfpr.ap.multicast;
+
+h3. Desafio UDP
+* Desenha uma elipse na tela conforme as coordenadas enviadas pelo cliente;
+* Pacote br.edu.utfpr.ap.desafioudp;
