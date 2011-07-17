@@ -54,6 +54,11 @@ public class HttpRequestHandler extends Thread {
 			
 			if (instr.equals("GET")) {
 				String fileName = st.nextToken();
+				// Redirecionando para o index.html
+				if(fileName.equals("/")) {
+					fileName = "/index.html";
+				}
+				
 				fileName = WWW_PATH + fileName;
 				
 				FileInputStream fis = null;
