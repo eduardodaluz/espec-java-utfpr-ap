@@ -1,6 +1,6 @@
 h1. Sistemas Distribuídos Aplicados à Tecnologia Java.
 * Estão todos os exercícios nesse projeto;
-* Projeto foi feito na IDE Eclipse;
+* Os projetos foram desenvolvidos na IDE Eclipse;
 * Pode ser que ocorra erros no "pacoteJAVA" o ExemploInterface.class pois importei ela pelo eclipse;
 
 h2. Exercícios
@@ -26,3 +26,8 @@ h3. TCP Servidor PEGAR HORA e PEGAR NOME
 * Servidor responde o nome do usuário do servidor;
 * Servidor responde requisição inválida caso do comando seja diferente;
 * Pacote br.edu.utfpr.ap.sisdistr.tcp;
+
+h3. Desafio TCP
+* Fazer um servidor que responda a requisições http;
+* Se a página requisitada não existir responder com um erro 404;
+* Pacote br.edu.utfpr.ap.sisdistr.pajehttpserver;
