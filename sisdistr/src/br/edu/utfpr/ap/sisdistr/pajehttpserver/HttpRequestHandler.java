@@ -58,7 +58,6 @@ public class HttpRequestHandler extends Thread {
 				if(fileName.equals("/")) {
 					fileName = "/index.html";
 				}
-
 				fileName = WWW_PATH + fileName;
 				
 				FileInputStream fis = null;
