@@ -9,19 +9,15 @@ public class MulticastPeer {
 
 	InetAddress grupo;
 	MulticastSocket multicast;
-	String ip;
-	int porta;
 
-	public MulticastPeer(String ip, int p) {
+	public MulticastPeer(String ip, int porta) {
 			try {
 				grupo = InetAddress.getByName(ip);
-				multicast = new MulticastSocket(p);
+				multicast = new MulticastSocket(porta);
 				System.out.println(multicast.getLocalPort());
 			} catch (UnknownHostException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	}
@@ -48,6 +44,10 @@ public class MulticastPeer {
 
 	public MulticastSocket getSocket() {
 		return multicast;
+	}
+	
+	public InetAddress getGrupo() {
+		return grupo;
 	}
 
 }

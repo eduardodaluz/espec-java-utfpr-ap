@@ -7,17 +7,19 @@ import java.net.MulticastSocket;
 
 public class MulticastSender {
 	
+	InetAddress grupo;
 	MulticastSocket multicast;
 	DatagramPacket pacote;
 	
-	public MulticastSender(MulticastSocket multicast) {
+	public MulticastSender(MulticastSocket multicast, InetAddress grupo) {
 		this.multicast = multicast;
+		this.grupo = grupo;
 	}
 	
 	public void sendMsg(String msg) {
 		try {
 			byte[] buffer = msg.getBytes();
-			pacote = new DatagramPacket(buffer, buffer.length, InetAddress.getByName("229.50.50.50"), multicast.getLocalPort());
+			pacote = new DatagramPacket(buffer, buffer.length, grupo, multicast.getLocalPort());
 			multicast.send(pacote);
 		} catch (IOException e) {
 			e.printStackTrace();

@@ -59,6 +59,7 @@ public class MulticastView extends JFrame {
 		sair.setEnabled(false);
 		// Area de mensagens.
 		mensagens = new JTextArea();
+		mensagens.setEditable(false);
 		painel.add(mensagens, BorderLayout.CENTER);
 		JPanel pageEnd = new JPanel();
 		pageEnd.setLayout(new BoxLayout(pageEnd, BoxLayout.LINE_AXIS));
@@ -82,7 +83,7 @@ public class MulticastView extends JFrame {
 		@Override
 		public void actionPerformed(ActionEvent e) {
 			peer.joinChat();
-			sender = new MulticastSender(peer.getSocket());
+			sender = new MulticastSender(peer.getSocket(), peer.getGrupo());
 			listener = new MulticastListener(peer.getSocket(), mensagens);
 			listener.start();
 			mensagens.append("\nEntrei no chat...");
