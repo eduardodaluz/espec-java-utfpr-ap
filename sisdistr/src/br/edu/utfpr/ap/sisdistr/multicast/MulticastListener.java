@@ -31,6 +31,8 @@ public class MulticastListener extends Thread {
 				String msg = "Msg from " + pacote.getAddress() + " >> " + new String(pacote.getData());
 				if (area != null) {
 					area.append("\n" + msg);
+				} else {
+					System.out.println(msg);
 				}
 			} catch (IOException e) {
 				e.printStackTrace();
