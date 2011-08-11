@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+}
+
+h1, h2, h3 {
+    color: #081640;
+}
+
+html {
+    padding-left: 20px;
+    padding-top: 20px;
+    background-color: #FCFFB0;        
+}
+
+h1 {
+    border-bottom: 1px solid #223F59;
+}
+
+#divrecados {
+    border: 0px solid #081640;
+}
