@@ -23,3 +23,9 @@ Projetos desenvolvidos:
 * Servidor UDP de inversão de expressão;
 
 * O projeto está no diretório: sisdistr;
+
+h1. Topicos Especiais
+
+Trata do aprendizado de tecnologias AJAX e JavaFX
+
+* O projeto está no diretório: topic_espec;
