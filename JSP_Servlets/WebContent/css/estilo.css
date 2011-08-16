@@ -1,0 +1,101 @@
+/* 
+    Document   : estilo
+    Created on : 13/08/2011, 09:21:37
+    Author     : eduardo
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    background-color: #59888C;
+    font-family: Arial,Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    color: #081640;
+}
+
+table {
+    background-repeat: repeat;
+    background-attachment: scroll;
+    text-align: left;
+    vertical-align: baseline;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+}
+
+form {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    background-color: #809994;
+    border : 1;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 0 rgba(200, 220, 200, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 2px 0 rgba(200, 220, 200, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 2px 0 rgba(200, 220, 200, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+fieldset {
+    border : none;
+    font-weight: bold;
+}
+
+label,  input {
+	display: block;
+	float: left;
+}
+
+label {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: bold;
+    width: 90px;
+    text-align: right;
+    padding: 4px 8px 8px 8px;
+}
+
+#rodape {
+	text-align: center;
+}
+
+input {
+    border: 1;
+    width:200px;
+    padding: 4px 10px 4px 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 2px 0 rgba(200, 220, 200, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -moz-box-shadow: 0 2px 0 rgba(200, 220, 200, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow: 0 2px 0 rgba(200, 220, 200, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: all 0.2s ease 0s;
+    -moz-transition: all 0.2s ease 0s;
+    -o-transition: all 0.2s ease 0s;
+    transition: all 0.2s ease 0s;
+}
+
+br {
+	clear: left;
+}
