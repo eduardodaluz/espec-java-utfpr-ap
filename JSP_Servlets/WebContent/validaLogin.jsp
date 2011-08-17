@@ -1,3 +1,5 @@
+<%@page import="br.edu.utfpr.ap.jsp.connection.ConnectionFactory"%>
+<%@page import="br.edu.utfpr.ap.jsp.usuario.UsuarioDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -11,7 +13,8 @@
         <%
             String usuario = request.getParameter("usuario");
             String senha = request.getParameter("senha");
-            Boolean loginAceito = usuario.equals("admin") && senha.equals("12345");
+            UsuarioDAO dao = new UsuarioDAO(ConnectionFactory.getConnection());
+            boolean loginAceito = dao.validaLogin(usuario, senha);
             
             if (loginAceito) {
                 session.setAttribute("loginAceito", true);

@@ -10,6 +10,9 @@
 <body>
 	<%@ include file="WEB-INF/jspf/cabecalho.jspf" %>
 	<h1>Especialização Java - Servlets e JSP</h1>
+	<h2>Recursos:</h2>
+	<a href="listaMensagens.jsp">Lista de Mensagens</a>
+	<a href="listaFuncionario.jsp">Pesquisa Funcionarios</a>
 	<%@ include file="WEB-INF/jspf/rodape.jspf" %>
 </body>
 </html>
