@@ -41,7 +41,8 @@ public class Main {
 //			String resposta = ref_servidor.mostraTexto("Olá Servidor remoto!");
 //			System.out.println("Resposta remota: " + resposta);
 		} catch (Exception e) {
-			System.err.println("Client exception: " + e.toString());
+			e.printStackTrace();
+			//System.err.println("Client exception: " + e.toString());
 		}
 	}
 

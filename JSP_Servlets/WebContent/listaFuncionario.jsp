@@ -94,18 +94,12 @@
         <form name="f1">
             <fieldset>
                 <legend>Procura Funcionario</legend>
-                <label id="lbCodigo" name="lbCodigo">ID:</label>
-                <input id="codigo" name="codigo" type="text" />
-                <label id="lbNome" name="lbNome">Nome:</label>
-                <input id="nome" name="nome" type="text" />
-                <!--
-                <label id="lbEndereco" name="lbEndereco">Endereço:</label>
-                <input id="ipEndereco" name="ipEndereco" type="text" /><br />
-                <label id="lbTelefone" name="lbTelefone">Telefone:</label>
-                <input id="ipTelefone" name="ipTelefone" type="text" /><br />
-                <label id="lbDataNasc" name="lbDataNasc">Data Nasc.:</label>
-                <input id="ipDataNasc" name="ipDataNasc" type="text" /><br /> -->
-                <input type="button" value="procurar" onclick='JavaScript:xmlhttpPost("listaFuncionario.jsp")' />
+                <label id="lbCodigo" >ID:</label>
+                <input id="codigo" name="codigo" type="text" /><br />
+                <label id="lbNome" >Nome:</label>
+                <input id="nome" name="nome" type="text" /><br />
+                <label id="filler01" ></label>
+                <input type="button" value="Procurar" onclick='JavaScript:xmlhttpPost("listaFuncionario.jsp")' />
             </fieldset>
         </form>
         </div>

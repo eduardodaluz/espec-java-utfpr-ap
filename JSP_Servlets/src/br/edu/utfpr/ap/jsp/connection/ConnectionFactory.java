@@ -26,4 +26,22 @@ public class ConnectionFactory {
         return null;
     }
     
+    public static Connection getConnection(String dbname) {
+        try {
+            Class.forName("org.firebirdsql.jdbc.FBDriver").newInstance();
+            String url = "jdbc:firebirdsql:localhost/3050:/firebird/" + dbname + ".fdb?lc_ctype=ISO8859_1";
+            Connection conn = DriverManager.getConnection(url,"SYSDBA","masterkey");
+            return conn;
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (InstantiationException ex ) {
+            Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(ConnectionFactory.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return null;
+    }
+    
 }

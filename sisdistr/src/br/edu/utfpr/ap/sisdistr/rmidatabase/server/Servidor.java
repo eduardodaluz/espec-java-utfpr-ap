@@ -15,7 +15,7 @@ public class Servidor implements ServerInterface {
 
 	@Override
 	public void inserir(Dado dado) {
-		banco.add(dado.getCodigo(), dado);
+		banco.add(dado);
 	}
 
 	@Override
