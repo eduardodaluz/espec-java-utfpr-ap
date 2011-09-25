@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/botique/Botique.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/visao/Principal.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/visao/CadFornecedor.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/visao/CadPedido.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/visao/CadProduto.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/teste/Array.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/controle/ControleProduto.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/modelo/Produto.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/visao/BotiqueTableModel.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/controle/AcaoDoControle.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/controle/Controle.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/controle/ControleFornecedor.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/modelo/Fornecedor.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/persistencia/Firebird.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/modelo/Pedido.java</file>
+        <file>file:/home/eduardo/workspace/netbeans/Botique/src/controle/ControlePedido.java</file>
+    </open-files>
+</project-private>
