@@ -1,25 +1,36 @@
 package modelo;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
 @Entity
 public class Pedido implements Serializable {
 
-    @Id @GeneratedValue(strategy= GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "gen_pedido", sequenceName = "GEN_PEDIDO", allocationSize = 1)
+    
+    @Id @GeneratedValue(strategy= GenerationType.SEQUENCE, generator="gen_pedido")
     private int id;
     private int numero;
     @Temporal(TemporalType.DATE)
     private Date dtPedido;
     @OneToOne
     private Fornecedor fornecedor;
+    @OneToMany(mappedBy = "pedido")
+    private List<PedidoItem> pedidoItens;
 
     public Pedido() {
     }
@@ -28,6 +39,27 @@ public class Pedido implements Serializable {
         this.numero = numero;
         this.dtPedido = dtPedido;
         this.fornecedor = fornecedor;
+    }
+    
+    public void setPedidoItens(List<PedidoItem> pedidoItens) {
+	this.pedidoItens = pedidoItens;
+    }
+    
+    public List<PedidoItem> getPedidoItens() {
+	return pedidoItens;
+    }
+    
+    public void addItem(PedidoItem item) {
+	if (pedidoItens == null) {
+	    pedidoItens = new ArrayList<PedidoItem>();
+	}
+	pedidoItens.add(item);
+    }
+    
+    public void rmItem(PedidoItem item) {
+	if (pedidoItens != null) {
+	    pedidoItens.remove(item);
+	}
     }
     
     public Object[] row() {
