@@ -1,0 +1,2 @@
+permissao 1
+permissao 2
