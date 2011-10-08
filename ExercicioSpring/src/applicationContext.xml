@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" xmlns:aop="http://www.springframework.org/schema/aop">
+
+    <bean id="motor20" class="exerciciospring.MotorDoisPontoZero">
+    </bean>
+    
+    <bean id="motor10" class="exerciciospring.MotorUmPontoZero">
+    </bean>
+    
+    <bean id="opc1" class="exerciciospring.Opcionais">
+	<property name="nome" value="Ar-Condicionado"/>
+	<property name="valor" value="10"/>
+    </bean>
+    
+    <bean id="opc2" class="exerciciospring.Opcionais">
+	<property name="nome" value="Vidro elétrico"/>
+	<property name="valor" value="20"/>
+    </bean>
+    
+    <bean id="opc3" class="exerciciospring.Opcionais">
+	<property name="nome" value="Direção Hidraulica" />
+	<property name="valor" value="40" />
+    </bean>
+    
+    <bean id="opc4" class="exerciciospring.Opcionais">
+	<property name="nome" value="Travas Elétricas"/>
+	<property name="valor" value="30"/>
+    </bean>
+    
+    <bean id="opc5" class="exerciciospring.Opcionais">
+	<property name="nome" value="Air Bag"/>
+	<property name="valor" value="50"/>
+    </bean>
+    
+    <bean id="carro20" class="exerciciospring.Carro">
+	<property name="motor" ref="motor20" />
+	<property name="opcionais">
+	    <list>
+		<ref local="opc1" />
+		<ref local="opc2" />
+		<ref local="opc3" />
+	    </list>
+	</property>
+    </bean>
+    
+    <bean id="carro10" class="exerciciospring.Carro" >
+	<property name="motor" ref="motor10" />
+	<property name="opcionais">
+	    <list>
+		<ref local="opc4" />
+		<ref local="opc5" />
+	    </list>
+	</property>
+    </bean>
+    
+</beans>
