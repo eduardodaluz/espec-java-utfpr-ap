@@ -1,11 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
         <link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
-        <!--<h:outputStylesheet name="css/stylesheet.css" />-->
+        <h:outputStylesheet name="css/stylesheet.css" />
 
         <title>Olá!</title>
     </head>
@@ -25,15 +26,12 @@
 
                 <h5>Tente adivinhar</h5>
 
-                <form action="response.xhtml">
-                    <input type="text" size="2" maxlength="2" />
-                    <input type="submit" value="submit" />
-                </form>
-
-                <!--<h:form>
-                    <h:inputText id="userNumber" size="2" maxlength="2" />
-                    <h:commandButton id="submit" value="submit" />
-                </h:form>-->
+                <h:form>
+                    <h:inputText id="userNumber" size="2" maxlength="2"
+                         value="#{adivinhaNumeroBean.numeroDigitado}"/>
+                    <h:commandButton id="submit" value="submit"
+                         action="response"/>
+                </h:form>
             </div>
 
             <div id="right" class="subContainer">
