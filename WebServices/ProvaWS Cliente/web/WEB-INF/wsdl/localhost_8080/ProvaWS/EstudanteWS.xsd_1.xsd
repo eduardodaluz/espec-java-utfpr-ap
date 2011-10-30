@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://pacote1/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://pacote1/">
+
+<xs:element name="prova" type="tns:prova" />
+
+<xs:element name="provaResponse" type="tns:provaResponse" />
+
+<xs:complexType name="prova">
+<xs:sequence>
+<xs:element name="classificacao" type="xs:int" />
+<xs:element name="nome" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="provaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

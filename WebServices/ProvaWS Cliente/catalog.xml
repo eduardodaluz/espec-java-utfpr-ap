@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ProvaWS/EstudanteWS?wsdl" uri="src/conf/xml-resources/web-service-references/EstudanteWS/wsdl/localhost_8080/ProvaWS/EstudanteWS.wsdl"/>
+    <system systemId="http://localhost:8080/ProvaWS/EstudanteWS?xsd=1" uri="src/conf/xml-resources/web-service-references/EstudanteWS/wsdl/localhost_8080/ProvaWS/EstudanteWS.xsd_1.xsd"/>
+</catalog>
