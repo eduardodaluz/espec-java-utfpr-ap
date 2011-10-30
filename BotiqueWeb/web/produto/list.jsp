@@ -5,22 +5,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
-        <div id="geral">
+        <div id="menu" class="nav">
+            <span class="menuButton"><a class="home" href="/BotiqueWeb" >Principal</a></span>
+            <span class="menuButton"><a class="create" href="produto?action=add" >Novo Produto</a></span>
+        </div>
+        <div id="geral" class="body">
             <h1>Lista de Produtos</h1>
-            <hr/>
-            <div id="menu">
-                <a href="/BotiqueWeb" >Principal</a>
-                <a href="produto?action=add" >Novo Produto</a>
-            </div>
             <hr/>
             <div id="pesquisar">
                 <p>Pesquisar:</p>
                 <form method="post" action="produto">
                     <input name="action" value="search" type="hidden"/>
+                    <div class="dialog">
                     <table>
                         <tbody>
                             <tr>
@@ -33,19 +34,21 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 </form>
             </div>
             <hr/>
-            <div id="tabela">
-                <p>Lista:</p>
+            <div id="tabela" class="list">
                 <table>
-                    <tbody>
+                    <thead>
                         <tr>
                             <th>Editar</th>
                             <th>Excluir</th>
                             <th>ID</th>
                             <th>Descrição</th>
                         </tr>
+                    </thead>
+                    <tbody>
                     <c:forEach var="prod" items="${produtoInstanceList}">
                         <tr>
                             <td>

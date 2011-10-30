@@ -5,22 +5,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
-        <div id="geral">
+        <div id="menu" class="nav">
+            <span class="menuButton"><a class="home" href="/BotiqueWeb" >Principal</a></span>
+            <span class="menuButton"><a class="create" href="fornecedor?action=add" >Novo Fornecedor</a></span>
+        </div>
+        <div id="geral" class="body">
             <h1>Lista de Fornecedores</h1>
-            <hr/>
-            <div id="menu">
-                <a href="/BotiqueWeb" >Principal</a>
-                <a href="fornecedor?action=add" >Novo Fornecedor</a>
-            </div>
             <hr/>
             <div id="pesquisar">
                 <p>Pesquisar:</p>
                 <form method="post" action="fornecedor">
                     <input name="action" value="search" type="hidden"/>
+                    <div class="dialog">
                     <table>
                         <tbody>
                             <tr>
@@ -33,11 +34,11 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 </form>
             </div>
             <hr/>
-            <div id="tabela">
-                <p>Lista:</p>
+            <div id="tabela" class="list">
                 <table>
                     <tbody>
                         <tr>

@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Editar Pedido</title>
         <script src="js/jquery-1.6.4.js" ></script>
@@ -31,19 +32,19 @@
         </script>
     </head>
     <body>
-        <div id="geral">
+        <div id="menu" class="nav">
+            <span class="menuButton"><a class="home" href="/BotiqueWeb" >Principal</a></span>
+            <span class="menuButton"><a class="list" href="pedido" >Listar Pedidos</a></span>
+        </div>
+        <div id="geral" class="body">
             <h1>Editar Pedido</h1>
-            <hr/>
-            <div id="menu">
-                <a href="/BotiqueWeb" >Principal</a>
-                <a href="pedido" >Listar Pedidos</a>
-            </div>
             <hr/>
             <div id="formulario">
                 <form method="post" action="pedido">
                     <input name="action" value="update" type="hidden" />
                     <input name="id" value="${pedido.id}" type="hidden" />
                     <input id="item-size" name="item-size" value="${pedido.pedidoItens.size()}" type="hidden" />
+                    <div class="dialog">
                     <table>
                         <tbody>
                             <tr>
@@ -120,6 +121,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 </form>
             </div>
         </div>

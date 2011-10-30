@@ -5,41 +5,21 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>JSP Page</title>
     </head>
     <body>
-        <div id="geral">
+        <div id="menu" class="nav">
+            <span class="menuButton"><a class="home" href="/BotiqueWeb" >Principal</a></span>
+            <span class="menuButton"><a class="create" href="pedido?action=add" >Novo Pedido</a></span>    
+        </div>
+        <div id="geral" class="body">
             <h1>Lista de Pedidos</h1>
             <hr/>
-            <div id="menu">
-                <a href="/BotiqueWeb" >Principal</a>
-                <a href="pedido?action=add" >Novo Pedido</a>
-            </div>
-            <hr/>
-            <div id="pesquisar">
-<!--                <p>Pesquisar:</p>
-                <form method="post" action="pedido">
-                    <input name="action" value="search" type="hidden"/>
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td>Nome: </td>
-                                <td><input name="nome" value="" /></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><input value="Enviar" type="submit" /></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </form>-->
-            </div>
-            <hr/>
-            <div id="tabela">
-                <p>Lista:</p>
+            <div id="tabela" class="list">
                 <table>
-                    <tbody>
+                    <thead>
                         <tr>
                             <th>Editar</th>
                             <th>Excluir</th>
@@ -49,8 +29,10 @@
                             <th>Fornecedor</th>
                             <th>Qntd. Itens</th>
                         </tr>
-                    <c:forEach var="ped" items="${pedidoInstanceList}">
-                        <tr>
+                    </thead>
+                    <tbody>
+                        <c:forEach var="ped" items="${pedidoInstanceList}" varStatus="i">
+                        <tr class="${(i.count % 2) == 0 ? 'odd' : 'even'}">
                             <td>
                                 <a href="pedido?action=edit&id=${ped.id}">Editar</a>
                             </td>

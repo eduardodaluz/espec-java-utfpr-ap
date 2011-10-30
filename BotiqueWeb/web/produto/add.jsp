@@ -8,21 +8,22 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Novo Produto</title>
     </head>
     <body>
-        <div id="geral">
+        <div id="menu" class="nav">
+            <span class="menuButton"><a class="home" href="/BotiqueWeb" >Principal</a></span>
+            <span class="menuButton"><a class="list" href="produto" >Listar Produtos</a></span>
+        </div>
+        <div id="geral" class="body">
             <h1>Novo Produto</h1>
-            <hr/>
-            <div id="menu">
-                <a href="/BotiqueWeb" >Principal</a>
-                <a href="produto" >Listar Produtos</a>
-            </div>
             <hr/>
             <div id="formulario">
                 <form method="post" action="produto">
                     <input name="action" value="save" type="hidden" />
+                    <div class="dialog">
                     <table>
                         <tbody>
                             <tr>
@@ -43,6 +44,7 @@
                             </tr>
                         </tbody>
                     </table>
+                    </div>
                 </form>
             </div>
         </div>

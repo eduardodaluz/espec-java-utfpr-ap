@@ -2,15 +2,17 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="css/main.css"/>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Botique WEB</title>
     </head>
     <body>
-        <div id="geral">
+        <div id="body">
             <h1>BOTIQUE WEB</h1>
+            <hr/>
             <div id="menu">
                 <ul>
-                    Menu
+                    <h2>Menu</h2>
                     <li><a href="produto" >PRODUTO</a></li>
                     <li><a href="fornecedor" >FORNECEDOR</a></li>
                     <li><a href="pedido" >PEDIDOS</a></li>
