@@ -7,9 +7,10 @@
         <title>Botique WEB</title>
     </head>
     <body>
-        <div id="body">
+        <div class="nav">
             <h1>BOTIQUE WEB</h1>
-            <hr/>
+        </div>
+        <div id="body">
             <div id="menu">
                 <ul>
                     <h2>Menu</h2>

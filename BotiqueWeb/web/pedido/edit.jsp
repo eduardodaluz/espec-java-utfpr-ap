@@ -7,27 +7,10 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Editar Pedido</title>
         <script src="js/jquery-1.6.4.js" ></script>
+        <script src="js/pedido.js" ></script>
         <script>
-            var status = parseInt(0);
-            function addItem() {
-                status = parseInt(status) + parseInt(1);
-                var nome = "item["+status+"]"
-                var itemClone = $('#item-clone').clone();
-                itemClone.attr("id", "item-"+status);
-                itemClone.find("input[id$=exists]").attr("id", nome + ".exists").attr("name", nome + ".exists");
-                itemClone.find("input[id$=id]").attr("id", nome + ".id").attr("name", nome + ".id");
-                itemClone.find("input[id$=quantidade]").attr("id", nome + ".quantidade").attr("name", nome + ".quantidade");
-                itemClone.find("select[id$=produto]").attr("id", nome + ".produto").attr("name", nome + ".produto");
-                itemClone.appendTo($('#div-item-list'));
-                itemClone.show();
-            }
-            function delItem(item) {
-                $(item).remove();
-            }
             $('document').ready(function() {
-                var size = $('#item-size').val();
-                console.log(size);
-                status = parseInt(size);
+                status = parseInt($('#item-size').val());
             });
         </script>
     </head>
@@ -136,6 +119,7 @@
                     </c:forEach>
                 </select>
                 <input id="item-clone.quantidade" name="item-clone.quantidade" value="${pedItem.quantidade}"/>
+                <span><a id="delItem" href="javascript:void(0);" onclick="delItem('#item-clone');">Excluir</a></span>
                 <br/>
             </div>
         </div>
