@@ -30,11 +30,7 @@ Trata do aprendizado de tecnologias AJAX e JavaFX
 
 * O projeto está no diretório: topic_espec;
 
-h1. Persistência e Armazenamento de Dados / LP II - Java
-
-Boutique DasPobre Comério de Artigos Contrabandeados SA, contrata desenvolvedores para criação de um controle de estoque.
-O Principal objetivo é controlar quais fornecedores são capazes de entregar semanalmente cada produto, ou melhor, quanto de cada produto, haja visto que, pela natureza dos produtos "importados", não é possível conseguir grandes quantidades de um mesmo fornecedor. 
-Deverá ter uma tela de consulta para saber quais fornecedores deverão ser acionados para atender um "eventual" pedido.
+h1. Persistência e Armazenamento de Dados / LP II
 
 Trabalho de controle de Botique(JPA/Hibernate) e Interface gráfica por SWING. A interface aproveitou o projeto de JPA.
 
