@@ -29,3 +29,15 @@ h1. Topicos Especiais
 Trata do aprendizado de tecnologias AJAX e JavaFX
 
 * O projeto está no diretório: topic_espec;
+
+h1. Persistência e Armazenamento de Dados / LP II
+
+Trabalho de controle de Botique(JPA/Hibernate) e Interface gráfica por SWING. A interface aproveitou o projeto de JPA.
+
+* O projeto está na pasta Botique;
+
+h1. Servlets e JSP (JEE)
+
+Trabalho foi implementar o sistema Botique que foi desenvolvido em Persistência e Armazenamento de Dados usando WEB.
+
+* O projeto está na pasta BotiqueWEB;
