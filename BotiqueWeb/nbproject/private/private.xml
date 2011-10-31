@@ -1,25 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
-    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/1">
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/web/produto/edit.jsp</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/src/java/controle/ProdutoServlet.java</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/web/index.jsp</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/web/produto/list.jsp</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/src/java/controle/ControleProduto.java</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/web/produto/add.jsp</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/web/fornecedor/list.jsp</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/src/java/controle/FornecedorServlet.java</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/src/java/modelo/Fornecedor.java</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/web/fornecedor/edit.jsp</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/web/fornecedor/add.jsp</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/src/java/controle/ControleFornecedor.java</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/src/java/controle/ControlePedido.java</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/web/pedido/list.jsp</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/src/java/controle/PedidoServlet.java</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/src/java/modelo/Pedido.java</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/web/pedido/edit.jsp</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/src/java/modelo/PedidoItem.java</file>
-        <file>file:/home/eduardo/dev/workspace/utfpr/WebServices/BotiqueWeb/web/pedido/add.jsp</file>
-    </open-files>
 </project-private>
