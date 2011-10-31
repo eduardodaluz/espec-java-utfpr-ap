@@ -1,5 +1,6 @@
  package controle;
 
+import java.util.ArrayList;
 import java.util.List;
 import modelo.Fornecedor;
 import modelo.Pedido;
@@ -24,14 +25,18 @@ public class ControlePedido extends Controle {
     }
     
     public String deletar(int id) {
-	tx.begin();
-	Pedido pedido = em.find(Pedido.class, id);
-	for(PedidoItem item : pedido.getPedidoItens()) {
-	    item.setPedido(pedido);
-	    em.remove(item);
-	}
-	em.remove(pedido);
-	tx.commit();
+        try {
+            tx.begin();
+            Pedido pedido = em.find(Pedido.class, id);
+            for(PedidoItem item : pedido.getPedidoItens()) {
+                item.setPedido(pedido);
+                em.remove(item);
+            }
+            em.remove(pedido);
+            tx.commit();
+        } catch(Exception e ) {
+                tx.rollback();
+        }
 	return null;
     }
     
@@ -56,51 +61,86 @@ public class ControlePedido extends Controle {
     }
     
     public Pedido getPedido(int id) {
-	tx.begin();
-	Pedido pedido = em.find(Pedido.class, id);
-	tx.commit();
+        Pedido pedido = new Pedido();
+        try {
+            tx.begin();
+            pedido = em.find(Pedido.class, id);
+            tx.commit();
+        } catch(Exception e ) {
+            tx.rollback();
+        }
 	return pedido;
     }
     
     public Produto getProduto(int id) {
-        tx.begin();
-        Produto prod = em.find(Produto.class, id);
-        tx.commit();
+        Produto prod = new Produto();
+        try {
+            tx.begin();
+            prod = em.find(Produto.class, id);
+            tx.commit();
+        } catch(Exception e ) {
+                tx.rollback();
+        }
         return prod;
     }
     
     public PedidoItem getItem(int id) {
-	tx.begin();
-	PedidoItem item = em.find(PedidoItem.class, id);
-	tx.commit();
+        PedidoItem item = new PedidoItem();
+        try {
+            tx.begin();
+            item = em.find(PedidoItem.class, id);
+            tx.commit();
+        } catch(Exception e ) {
+                tx.rollback();
+        }
 	return item;
     }
     
     public Fornecedor getFornecedor(int id) {
-        tx.begin();
-        Fornecedor forn = em.find(Fornecedor.class, id);
-        tx.commit();
+        Fornecedor forn = new Fornecedor();
+        try {
+            tx.begin();
+            forn = em.find(Fornecedor.class, id);
+            tx.commit();
+        } catch(Exception e ) {
+                tx.rollback();
+        }
         return forn;
     }
     
     public List<Pedido> listaDePedidos() {
-	tx.begin();
-	List<Pedido> pedidos = em.createQuery("from Pedido").getResultList();
-	tx.commit();
+        List<Pedido> pedidos = new ArrayList<Pedido>();
+        try {
+            tx.begin();
+            pedidos = em.createQuery("from Pedido").getResultList();
+            tx.commit();
+        } catch(Exception e ) {
+                tx.rollback();
+        }
 	return pedidos;
     }
     
     public List<Fornecedor> listaDeFornecedores() {
-	tx.begin();
-	List<Fornecedor> fornecedores = em.createQuery("from Fornecedor").getResultList();
-	tx.commit();
+        List<Fornecedor> fornecedores = new ArrayList<Fornecedor>();
+        try {
+            tx.begin();
+            fornecedores = em.createQuery("from Fornecedor").getResultList();
+            tx.commit();
+        } catch(Exception e ) {
+                tx.rollback();
+        }
 	return fornecedores;
     }
     
     public List<Produto> listaDeProdutos() {
-	tx.begin();
-	List<Produto> produtos = em.createQuery("from Produto").getResultList();
-	tx.commit();
+        List<Produto> produtos = new ArrayList<Produto>();
+        try {
+            tx.begin();
+            produtos = em.createQuery("from Produto").getResultList();
+            tx.commit();
+        } catch(Exception e ) {
+                tx.rollback();
+        }
 	return produtos;
     }
     
