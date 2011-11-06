@@ -2,4 +2,5 @@
 <endpoints version="2.0" xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime">
   <endpoint implementation="webservices.ProdutoWS" name="ProdutoWS" url-pattern="/ProdutoWS"/>
   <endpoint implementation="webservices.FornecedorWS" name="FornecedorWS" url-pattern="/FornecedorWS"/>
+  <endpoint implementation="webservices.PedidoWS" name="PedidoWS" url-pattern="/PedidoWS"/>
 </endpoints>

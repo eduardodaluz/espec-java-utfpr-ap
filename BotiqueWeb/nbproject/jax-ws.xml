@@ -7,6 +7,9 @@
     <service name="FornecedorWS">
       <implementation-class>webservices.FornecedorWS</implementation-class>
     </service>
+    <service name="PedidoWS">
+      <implementation-class>webservices.PedidoWS</implementation-class>
+    </service>
   </services>
   <clients/>
   <jsr109>false</jsr109>
