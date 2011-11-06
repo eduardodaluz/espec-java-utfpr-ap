@@ -59,7 +59,7 @@ public class FornecedorServlet extends HttpServlet {
     private void processSearch(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String nome = request.getParameter("nome");
-        List<Fornecedor> fornecedorInstanceList = controlForn.listaDeFonecedoresPorNome(nome);
+        List<Fornecedor> fornecedorInstanceList = controlForn.listaDeFornecedoresPorNome(nome);
         request.setAttribute("fornecedorInstanceList", fornecedorInstanceList);
         servletContext.getRequestDispatcher("/fornecedor/list.jsp").forward(request, response);
     }

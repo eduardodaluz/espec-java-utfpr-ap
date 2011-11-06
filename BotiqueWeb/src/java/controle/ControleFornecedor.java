@@ -42,7 +42,7 @@ public class ControleFornecedor extends Controle {
 	return fornecedores;
     }
     
-    public List<Fornecedor> listaDeFonecedoresPorNome(String nome) {
+    public List<Fornecedor> listaDeFornecedoresPorNome(String nome) {
         List<Fornecedor> fornecedores = new ArrayList<Fornecedor>();
         try {
             tx.begin();
