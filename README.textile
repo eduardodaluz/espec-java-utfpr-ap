@@ -45,3 +45,10 @@ h1. Servlets e JSP (JEE)
 Trabalho foi implementar o sistema Botique que foi desenvolvido em Persistência e Armazenamento de Dados usando WEB.
 
 * O projeto está na pasta BotiqueWEB;
+
+h1. XML e WebServices
+
+Implementar a parte de persistência do projeto de Servlets de JSP em Web Service.
+Os alunos devem gerar os serviços Web da persistência em JPA.
+
+* O projeto está na pasta BotiqueWeb;
